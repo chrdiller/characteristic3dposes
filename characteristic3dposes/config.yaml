@@ -1,0 +1,45 @@
+---
+hydra:
+  output_subdir: hydra
+  verbose: []
+  sweep:
+    dir: ${hydra.run.dir}
+    subdir: ${hydra.job.num}
+
+data:
+  type: grab  # grab, h36m
+  file: data_generation/grab/output/data_3d_grab.npz
+#  file: data_generation/h36m/output/data_3d_h36m.npz
+  input_start: random
+  multiplicator: 25
+  augmentation_angle: 25.
+
+model:
+  gru_layers: 1
+  dim_embedding: 64
+  p_dropout: 0.25
+  attention:
+    dim_k: 64
+    dim_v: 64
+    num_layers: 1
+    num_heads: 1
+
+training:
+  joint:
+    given: []
+    predict: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24]
+#     predict: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]
+  heatmap:
+    criterion: ce  # ce, l2, l1, smooth_l1
+    num_classes: 10
+    sigma: 2.
+  offsets:
+    overlap_threshold: 5
+    criterion: l1
+    after_epoch: 25
+  workers: 8
+  epochs: 50
+  lr: 0.001
+  weight_decay: 0.001
+  batch_size: 100
+  num_warmup_steps: 1000

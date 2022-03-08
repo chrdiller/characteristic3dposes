@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "characteristic3dposes"
+version = "1.0.0"
+description = "Characteristic 3D Poses"
+authors = ["Christian Diller <git@christian-diller.de>"]
+
+[tool.poetry.dependencies]
+# Core
+python = "~3.7"
+numpy = "^1.21.1"
+torch = "~1.6"
+hydra-core = "^1.1.0"
+scipy = "^1.4.1"
+matplotlib = "^3.2.1"
+pandas = "^1.0.3"
+
+# Misc
+pymp-pypi = "^0.4.2"
+trimesh = "^3.6.19"
+opencv-python = "^4.2.0"
+tqdm = "^4.47.0"
+smplx = "^0.1.21"
+jax = "^0.2.5"
+jaxlib = "^0.1.56"
+cdflib = "^0.3.20"
+pyrender = "^0.1.45"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
