@@ -1,6 +1,6 @@
 # Forecasting Characteristic 3D Poses of Human Actions (CVPR'22)
 
-## 🌍 [Project Page](https://charposes.christian-diller.de/) | 📃 [Paper](https://charposes.christian-diller.de/characteristic3dposes.pdf) | 📝 [ArXiv](https://arxiv.org/abs/2011.15079) | 🎥 [Video](https://www.youtube.com/watch?v=kVhn8OWMgME)
+## 🌍 [Project Page](https://charposes.christian-diller.de/) | 📃 [Paper](https://charposes.christian-diller.de/characteristic3dposes.pdf) | 📝 [ArXiv](https://arxiv.org/abs/2011.15079) | 🎥 [Video](https://www.youtube.com/watch?v=kVhn8OWMgME) | 💿 [Dataset](#datasets)
 
 <br/>
 
@@ -12,12 +12,11 @@
 
 If you find this work useful for your research, please consider citing:
 
-    @article{Diller2020ForecastingC3,
-      title={Forecasting Characteristic 3D Poses of Human Actions},
-      author={Christian Diller and Thomas A. Funkhouser and Angela Dai},
-      journal={ArXiv},
-      year={2020},
-      volume={abs/2011.15079}
+    @article{diller2022charposes,
+        title={Forecasting Characteristic 3D Poses of Human Actions},
+        author={Diller, Christian and Funkhouser, Thomas and Dai, Angela},
+        booktitle={Proc. Computer Vision and Pattern Recognition (CVPR), IEEE},
+        year={2022}
     }
 
 <hr/>
